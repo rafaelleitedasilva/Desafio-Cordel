@@ -1,45 +1,72 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@200&display=swap');
 
 
+:root{
+    --fonte-escrita:'Pacifico', cursive;
+    --fonte-padrao: 'Poppins', sans-serif;
+}
 *{
     margin: 0px;
-    padding: 0px;
+    padding: 0px
 }
 
 html, body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-color: rgb(204, 204, 204);
     min-height: 100vh;
 }
 
 header{
+    font-family: var(--fonte-padrao);
     background-color: black;
     color: white;
     text-align: center;
 }
 header > h1{
     padding-top:50px;
-    font-variant: small-caps    ;
+    font-variant: small-caps;
+    font-size: 5vw;
 }
 
 header > P {
     padding-bottom:50PX;
 }
-section.normal{
-    background-color: white;
-    color: black;
-}
+
 
 section{
+    font-family: var(--fonte-escrita);
+    font-size: 1.6em;
     padding-top:10vh ;
     padding-bottom: 10vh;
     line-height: 2em;
     padding-left: 30px;
 }
 
+section.normal{
+    background-color: white;
+    color: black;
+}
+
 section.imagem{
     background-color: gray;
     color: white;
     text-shadow: black 2px 1px 3px;
+    box-shadow: inset 1px 2px 8px 4px rgba(0, 0, 0, 0.514);
+    background-attachment: fixed;
+}
+
+section#primeiro{
+    background-image: url("../imagens/background001.jpg");
+    background-position: center center;
+}
+
+section#segundo{
+    background-image: url("../imagens/background002.jpg");
+    background-position: right center;
+}
+p{
+    padding: 10px;
 }
 
 a{
